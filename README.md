@@ -3,6 +3,11 @@ gulpfiles
 
 If you are not familier with **browserify**, please learn [browserify-adventure](https://github.com/substack/browserify-adventure) by [codeschool](http://nodeschool.io/). You can learn not only browserify but also nodejs on [codeschool](http://nodeschool.io/).
 
+| taskfile | defined tasks |
+| :-- | :-- |
+| [gulpfile](gulpfile.js) | `default` |
+| [task/scss](task/scss.js) | 'scss' |
+
 ## Architecture
 
 Please see [wiki]()
@@ -28,11 +33,22 @@ Composer and all content on this site are released under the [MIT license](LICEN
 
 ## References
 
-- [vendor prefix, minify, 開発/本番用ビルドの切り替え... CSSのあれこれをGulpにさせてみた on Qiita](http://qiita.com/tokimari/items/8cb648e06c4db072e7aa)
+### Github
+
+- [cognitom/gulpfiles](https://github.com/cognitom/gulpfiles)
+- [cognitom/gulp-straw](https://github.com/cognitom/gulp-straw)
+- [yeoman/generator-gulp-webapp](https://github.com/yeoman/generator-gulp-webapp)
+
+### Qiita
+
+- [vendor prefix, minify, 開発/本番用ビルドの切り替え... CSSのあれこれをGulpにさせてみた](http://qiita.com/tokimari/items/8cb648e06c4db072e7aa)
+- [gulpfiles](http://qiita.com/cognitom/items/dfbac22c02a7ffa957aa)
+- [gulpfile スタイルガイド - v0.5.0](http://qiita.com/cognitom/items/045c8596a30aa5ab8a47)
+
+### Others
+
 - [GRUNT AND GULP TASKS FOR PERFORMANCE OPTIMIZATION](http://yeoman.io/blog/performance-optimization.html)
 - [Gulp + Browserify: The Everything Post](http://viget.com/extend/gulp-browserify-starter-faq)
-- [cognitom/gulpfiles on Github](https://github.com/cognitom/gulpfiles)
-- [cognitom/gulp-straw on Github](https://github.com/cognitom/gulp-straw)
-- [yeoman/generator-gulp-webapp on Github](https://github.com/yeoman/generator-gulp-webapp)
-- [gulpfiles on Qiita](http://qiita.com/cognitom/items/dfbac22c02a7ffa957aa)
-- [gulpfile スタイルガイド - v0.5.0 on Qiita](http://qiita.com/cognitom/items/045c8596a30aa5ab8a47)
+
+
+
