@@ -1,10 +1,6 @@
 gulpfiles
 =========
 
-<p align="center">
-  <img src="https://raw.github.com/gulpjs/artwork/master/gulp-2x.png" width="80" height="auto" />
-</p>
-
 If you are not familier with **browserify**, please learn [browserify-adventure](https://github.com/substack/browserify-adventure) by [codeschool](http://nodeschool.io/). You can learn not only browserify but also nodejs on [codeschool](http://nodeschool.io/).
 
 | taskfile | defined tasks |
