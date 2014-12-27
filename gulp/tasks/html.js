@@ -7,4 +7,4 @@ gulp.task('htmlmin', function() {
   return gulp.src('index.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('./'))
-})
+});
