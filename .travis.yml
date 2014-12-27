@@ -8,4 +8,7 @@ cache:
 before_script:
   - gem install sass
   - npm install
-script: gulp debug
+script: 
+  - gulp scss
+  - gulp htmlmin
+  - gulp debug
