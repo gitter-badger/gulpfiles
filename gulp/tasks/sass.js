@@ -10,6 +10,7 @@ var sourcemaps   = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var handleErrors = require('../util/handleErrors');
 
+// TODO: Create autoprefixer.js and import it
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
   'ie_mob >= 10',
@@ -27,6 +28,7 @@ gulp.task('styles:scss', function(){
     .pipe(sourcemaps.init())
     .pipe(scsslint())
     .pipe(sass({
+      // TODO: Replace config
       sourceComments: 'map',
     }))
     .on('error', handleErrors)
