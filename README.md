@@ -31,7 +31,7 @@ Please see [wiki]()
 
 ## License
 
-Composer and all content on this site are released under the [MIT license](LICENSE).
+gulpfiles and all content on this site are released under the [MIT license](LICENSE).
 
 ## References
 
