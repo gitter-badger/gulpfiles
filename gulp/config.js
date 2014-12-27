@@ -9,8 +9,8 @@ module.exports = {
       sourcComments: 'map'
     }
   }
-  tsc: {
-    src: '',
-    dest: dest
+  html: {
+    src: src + '*.html',
+    dest: './'
   }
 }
