@@ -6,7 +6,12 @@ module.exports = {
     src: src + '/scss/*.{sass, scss}',
     dest: dest,
     settings: {
-      sourcComments: 'map'
+      sass: {
+        sourcComments: 'map'
+      },
+      scsslint: {
+        'config': 'lint.yml'
+      }
     }
   }
   html: {
