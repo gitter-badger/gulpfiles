@@ -21,6 +21,7 @@
     "gulp-csscomb": "^3.0.3",
     "gulp-csso": "^0.2.9",
     "gulp-debug": "^1.0.1",
+    "gulp-htmlmin": "^0.2.0",
     "gulp-notify": "^2.1.0",
     "gulp-sass": "^1.2.4",
     "gulp-sourcemaps": "^1.2.8",
