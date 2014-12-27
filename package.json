@@ -25,6 +25,7 @@
     "gulp-notify": "^2.1.0",
     "gulp-sass": "^1.2.4",
     "gulp-sourcemaps": "^1.2.8",
+    "gulp-webp": "^2.1.1",
     "require-dir": "^0.1.0"
   }
 }
