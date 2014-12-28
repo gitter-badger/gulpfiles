@@ -27,8 +27,8 @@ header {
         font-size: 14px;
         margin-left: 10px;
         padding: 12px 23px;
-        color: rgb(102, 102, 102);
         border: 2px solid $grey;
+        color: rgb(102, 102, 102);
         @include vendor(border-radius, 100px);
         @include vendor(transition, all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1));
       }

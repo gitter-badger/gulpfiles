@@ -13,4 +13,53 @@ a {
 
 article {
   height: calc(100% - 144px);
+
+  // TODO: Remove it
+  padding: 1em;
+
+  .code {
+
+    .code__header {
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: 24px;
+        color: rgb(102, 102, 102);
+      }
+
+      ul {
+        margin: 0;
+        position: relative;
+        top: 4px;
+        li {
+          a {
+            color: $grey;
+            padding: 6px 0;
+            cursor: not-allowed ;
+          }
+        }
+      }
+    }
+
+    .code__content {
+      background: $black;
+      min-height: 150px;
+      padding: .5em;
+      @include vendor(border-radius, $brand-round);
+    }
+  }
+
+
+  .task__header {
+    input {
+      outline: 0;
+      font-size:14px;
+      padding: 12px 23px;
+      border: 2px solid $grey;
+      @include vendor(border-radius, 100px);
+      @include vendor(transition, all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1));
+    }
+  }
+
+
 }
