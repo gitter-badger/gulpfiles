@@ -3,13 +3,11 @@
 var gulp         = require('gulp');
 var size         = require('gulp-size');
 var htmlmin      = require('gulp-htmlmin');
+var cofig        = require('../config.js').html;
 
 gulp.task('htmlmin', function() {
-  return gulp.src('index.html')
-    .pipe(htmlmin({
-        // TODO: Replace config
-        collapseWhitespace: true
-    }))
-    .pipe(gulp.dest('./'))
+  return gulp.src(config.src)
+    .pipe(htmlmin(config.settings))
+    .pipe(gulp.dest(config.dest))
     .pipe(size({title: 'html'}));
 });

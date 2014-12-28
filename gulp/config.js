@@ -14,7 +14,10 @@ module.exports = {
     }
   },
   html: {
-    src: src + '*.html',
-    dest: './'
+    src: './index.html',
+    dest: './',
+    settings: {
+      collapseWhitespace: true
+    }
   }
 }
