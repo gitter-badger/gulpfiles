@@ -26,7 +26,7 @@
 $use-grids:         false;
 $use-flexbox:       false;
 $use-columns:       false;
-$use-nav:           false;
+$use-nav:           true;
 $use-options:       false;
 $use-pagination:    false;
 $use-breadcrumb:    false;
@@ -72,8 +72,10 @@ $use-greybox:       false;
 @import url("http://fonts.googleapis.com/css?family=Lato:400,700|Hammersmith+One");
 $lato:         'Lato', sans-serif;
 $hammersmith:  'Hammersmith One', sans-serif;
+$sans: 'Source Sans Pro', sans-serif;
 
 
 
 $black: #3d464d;
-$grey: #778792;
+$grey:  rgba(0,0,0,.1);
+$red:   #cb2027;

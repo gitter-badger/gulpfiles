@@ -1,17 +1,56 @@
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+/**
+ * Base header Style etc.
+ */
 header {
   background: #fff;
   padding: 1em 0;
 
-  // TODO Remove it
-  .row { padding: 0 1em;}
-
   h1 {
     font-size: 0;
     a {
-      @include font($lato, 24, #cb2027);
+      color: $red;
+      font-size: 1.75rem;
       letter-spacing: -0.05em;
-      font-family: $lato;
-      text-decoration: none;
+      font-family: $sans;
     }
   }
-}
+
+
+  ul {
+    margin: 0;
+    li {
+      a {
+        outline: 0;
+        display: block;
+        font-size: 14px;
+        margin-left: 10px;
+        padding: 12px 23px;
+        font-family: $sans;
+        letter-spacing: -0.02em;
+        color: rgb(102, 102, 102);
+        border: 2px solid $grey;
+        @include vendor(border-radius, 100px);
+        @include vendor(transition, all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1));
+      }
+    }
+  }
+
+
+  // Facebook Share button
+  ul li:first-child:hover a {
+    border-color: #3b5998;
+    color: #3b5998;
+  }
+
+
+  // Twitter Tweet button
+  ul li:last-child:hover a {
+    border-color: #55acee;
+    color: #55acee;
+  }
+
+
+}// End Header

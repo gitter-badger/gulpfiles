@@ -1,23 +1,36 @@
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+/**
+ * Base footer Style etc.
+ */
 footer {
+  border-top: 2px solid $grey;
   padding: 1em 0;
 
-  .row { padding: 0 1em; }
 
   small {
-    @include font($lato, 12, #999);
     letter-spacing: -0.02em;
+    position: relative;
+    font-size: .75rem;
     font-weight: 400;
+    color: #999;
+    top: 6px;
   }
+
 
   p {
     line-height: inherit;
     margin: 0;
   }
 
+
   a {
-    @include font($lato, 12, rgb(102, 102, 102));
+    color: rgb(102, 102, 102);
     letter-spacing: -0.02em;
-    text-decoration: none;
+    font-size: .75rem;
     font-weight: 400;
   }
-}
+
+
+} //End Footer
