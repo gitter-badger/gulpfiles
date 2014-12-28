@@ -1,0 +1,17 @@
+header {
+  background: #fff;
+  padding: 1em 0;
+
+  // TODO Remove it
+  .row { padding: 0 1em;}
+
+  h1 {
+    font-size: 0;
+    a {
+      @include font($lato, 24, #cb2027);
+      letter-spacing: -0.05em;
+      font-family: $lato;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@mixin font ($font-family, $font-size, $color, $base: 16) {
+  margin: 0;
+  padding: 0;
+  color: $color;
+  letter-spacing:0.1em;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font : {
+    weight: 700;
+    style: normal;
+    kerning: normal;
+    family: $font-family;
+    size: $font-size + px;
+    size: ($font-size / $base) + rem;
+  }
+}
+
+
+
+/**
+ * Create vendor-prefixed CSS in one go, e.g.
+ *
+   `@include vendor(border-radius, 4px);`
+ *
+ * Thanks to inuit.css for the `vendor` Sass:
+ */
+@mixin vendor($property, $value...){
+    -webkit-#{$property}:$value;
+       -moz-#{$property}:$value;
+        -ms-#{$property}:$value;
+         -o-#{$property}:$value;
+            #{$property}:$value;
+}

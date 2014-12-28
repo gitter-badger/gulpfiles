@@ -15,17 +15,17 @@
  * Setup
  */
 @import "vars";
+@import "vendors/inuit/inuit";
+@import "helpers/mixins";
 
 
-
+@import "base/typography";
 
 
 /**
  * She’s all yours, cap’n... Begin importing your stuff here.
  */
 //@import "ui/example";
-
-
-body {
-  background: red;
-}
+@import "layout/header";
+@import "layout/footer";
+@import "layout/article";

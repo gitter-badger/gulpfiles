@@ -1,0 +1,23 @@
+footer {
+  padding: 1em 0;
+
+  .row { padding: 0 1em; }
+
+  small {
+    @include font($lato, 12, #999);
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
+
+  p {
+    line-height: inherit;
+    margin: 0;
+  }
+
+  a {
+    @include font($lato, 12, rgb(102, 102, 102));
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    font-weight: 400;
+  }
+}

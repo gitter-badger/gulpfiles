@@ -24,39 +24,39 @@ body {
   font-weight: 300;
 }
 
-.entry__content h1,
-.entry__content h2,
-.entry__content h3,
-.entry__content h4,
-.entry__content img,
-.entry__content ul {
+h1,
+h2,
+h3,
+h4,
+img,
+ul {
   margin: 1.414em 0 0.5em;
   font-weight: inherit;
   line-height: 1.2;
 }
 
-.entry__content p {
+p {
   letter-spacing: -0.01rem;
   margin-bottom: 1.3em;
   font-style: normal;
   line-height: 1.5;
 }
 
-.entry__content h1 {
+h1 {
   margin-top: 0;
-  font-size: 4.236em;
+  // font-size: 4.236em;
 }
 
-.entry__content h2 {
+h2 {
   @include font($lato, 36, $black);
   letter-spacing: -0.02em;
 }
 
-.entry__content h3 {
+h3 {
   @include font($lato, 32, rgba(0,0,0,0.44));
   letter-spacing: -0.02em;
   margin: 1.414em 0 0.5em;
 }
 
-.entry__content small,
-.entry__content .font_small {font-size: 0.618em;}
+small,
+.font_small {font-size: 0.618em;}
