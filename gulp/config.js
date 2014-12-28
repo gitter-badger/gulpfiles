@@ -10,10 +10,10 @@ module.exports = {
         sourcComments: 'map'
       },
       scsslint: {
-        'config': 'lint.yml'
+        config: 'lint.yml'
       }
     }
-  }
+  },
   html: {
     src: src + '*.html',
     dest: './'
