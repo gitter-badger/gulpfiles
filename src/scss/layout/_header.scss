@@ -14,7 +14,6 @@ header {
       color: $red;
       font-size: 1.75rem;
       letter-spacing: -0.05em;
-      font-family: $sans;
     }
   }
 
@@ -28,8 +27,6 @@ header {
         font-size: 14px;
         margin-left: 10px;
         padding: 12px 23px;
-        font-family: $sans;
-        letter-spacing: -0.02em;
         color: rgb(102, 102, 102);
         border: 2px solid $grey;
         @include vendor(border-radius, 100px);
