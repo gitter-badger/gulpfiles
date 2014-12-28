@@ -1,5 +1,6 @@
 'use strict';
 
+// TODO: Change the way to require gulp libraries.
 var gulp         = require('gulp');
 var csso         = require('gulp-csso');
 var sass         = require('gulp-sass');
@@ -11,7 +12,6 @@ var autoprefixer = require('gulp-autoprefixer');
 var config       = require('../config.js').sass;
 var handleErrors = require('../util/handleErrors');
 
-// TODO: Create autoprefixer.js and import it
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
   'ie_mob >= 10',
@@ -25,18 +25,15 @@ var AUTOPREFIXER_BROWSERS = [
 ];
 
 gulp.task('styles:scss', function(){
-  return gulp.src('./src/scss/main.scss')
+  return gulp.src(config.src)
     .pipe(sourcemaps.init())
     .pipe(scsslint(config.settings.scsslint))
-    .pipe(sass({
-      // TODO: Replace config
-      sourceComments: 'map',
-    }))
+    .pipe(sass(config.settings.sass))
     .on('error', handleErrors)
     .pipe(sourcemaps.write())
     .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
     .pipe(csscomb())
     .pipe(csso())
-    .pipe(gulp.dest('./src/css'))
+    .pipe(gulp.dest(config.dest))
     .pipe(size({title: 'styles:scss'}));
 });
