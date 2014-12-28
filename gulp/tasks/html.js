@@ -3,7 +3,7 @@
 var gulp         = require('gulp');
 var size         = require('gulp-size');
 var htmlmin      = require('gulp-htmlmin');
-var cofig        = require('../config.js').html;
+var config        = require('../config.js').html;
 
 gulp.task('htmlmin', function() {
   return gulp.src(config.src)
