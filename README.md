@@ -1,6 +1,9 @@
 gulpfiles
 =========
 
+[![Dependency Status](https://gemnasium.com/sota0805/gulpfiles.svg)](https://gemnasium.com/sota0805/gulpfiles)
+
+
 I would like to make like [Gulp Fiction](Gulp Fiction), it is cool but it bother me because it help user create new gulpfiles so I would like to help user create gulpfile based on exsisiting gulpfiles on Github.
 
 If you are not familier with **browserify**, please learn [browserify-adventure](https://github.com/substack/browserify-adventure) by [codeschool](http://nodeschool.io/). You can learn not only browserify but also nodejs on [codeschool](http://nodeschool.io/).
