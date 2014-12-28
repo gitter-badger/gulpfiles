@@ -8,6 +8,7 @@ var csscomb      = require('gulp-csscomb');
 var scsslint     = require('gulp-scss-lint');
 var sourcemaps   = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
+var config       = require('../config.js').sass;
 var handleErrors = require('../util/handleErrors');
 
 // TODO: Create autoprefixer.js and import it
@@ -26,7 +27,7 @@ var AUTOPREFIXER_BROWSERS = [
 gulp.task('styles:scss', function(){
   return gulp.src('./src/scss/main.scss')
     .pipe(sourcemaps.init())
-    .pipe(scsslint())
+    .pipe(scsslint(config.settings.scsslint))
     .pipe(sass({
       // TODO: Replace config
       sourceComments: 'map',
