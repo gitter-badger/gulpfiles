@@ -1,6 +1,8 @@
 gulpfiles
 =========
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sota0805/gulpfiles?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Dependency Status](https://gemnasium.com/sota0805/gulpfiles.svg)](https://gemnasium.com/sota0805/gulpfiles)
 
 
